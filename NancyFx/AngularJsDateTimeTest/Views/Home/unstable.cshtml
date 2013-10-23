@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script src="~/Content/unstable/angular-1.2.0-rc3.min.js"></script>
+  <script src="~/Content/app.js"></script>
+  <title>unstable test</title>
+</head>
+<body ng-controller="testCtrl">
+  <a ng-click="getTime()">GetTime</a>
+  <ul>
+    <li ng-repeat="t in times">{{t.time | date:'yyyy/MM/dd HH:mm:ss'}}</li>
+  </ul>
+</body>
+</html>
